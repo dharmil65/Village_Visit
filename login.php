@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<?php include 'head.php'; ?>
+<?php include __DIR__.'/../head.php'; ?>
 <title>Village Visit Login</title>
 	<?php include 'main-header.php'; ?>
 	<style>.menu-area {

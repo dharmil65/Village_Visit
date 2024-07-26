@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<?php include 'head.php';
+<?php include __DIR__.'/../head.php';
 	$page = 'sewer-questions';?>
 <title>ગામની મુલાકાતનું પત્રક</title>
-	<?php include 'main-header.php'; ?>
+<?php include __DIR__.'/../main-header.php'; ?>
 <style>
     .step {
       display: none;

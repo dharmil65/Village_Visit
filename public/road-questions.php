@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<?php include 'head.php';
-	$page = 'polution-questions';?>
+<?php include __DIR__.'/../head.php';
+	$page = 'road-questions';?>
 <title>ગામની મુલાકાતનું પત્રક</title>
-	<?php include 'main-header.php'; ?>
+<?php include __DIR__.'/../main-header.php'; ?>
 <style>
     .step {
       display: none;
@@ -21,12 +21,11 @@
 
                                 <div class="card-body">
         <form id="surveyForm">
-     			
-							<!-- Step 11 -->
+     			<!-- Step 8 -->
 			<div class="step active">
 				<div class="row">
-					<h5 class="card-title text-center fs-4">પ્રદુષણ બાબતના પ્રશ્નો</h5>
-							  <div class="col-md-6 mb-3">
+					<h5 class="card-title text-center fs-4">રોડ/રસ્તા બાબતના પ્રશ્નો</h5>
+								  <div class="col-md-6 mb-3">
   	<label for="validationCustom03">તાલુકાનું નામ:</label>
       <select class="form-select" name="category" id="validationCustom03" onchange="ChangecatList()" required>
         <option value="">તાલુકો સિલેક્ટ કરો</option>
@@ -47,8 +46,8 @@
 	</div>
   </div>
 						<div class="col-md-12">
-                    <label for="polution_1" class="form-label">ગામમાં આવેલી GIDC/ફેક્ટરીની આજુબાજુમાં સ્વચ્છતા જળવાય છે કે, કેમ?</label>
-                    <select class="form-select" aria-label="Default select example" id="polution_1">
+                    <label for="road_1" class="form-label">ગામમા સી.સી રોડ છે કે, કેમ?</label>
+                    <select class="form-select" aria-label="Default select example" id="road_1">
               <option value="" disabled selected></option>
               <option value="yes">Yes</option>
               <option value="no">No</option>
@@ -56,57 +55,44 @@
             </select>
                 </div>
 						<div class="col-md-12">
-                    <label for="polution_1v" class="form-label">વિગત</label>
-                    <input type="text" class="form-control" id="polution_1v" placeholder="">
+                    <label for="road_1v" class="form-label">વિગત</label>
+                    <input type="text" class="form-control" id="road_1v" placeholder="">
                 </div>
+					
 						<div class="col-md-12">
-                    <label for="polution_2" class="form-label">ગામમા પ્રદુષણ અંગે કોઇ પ્રશ્ન છે કે કેમ?</label>
-                    <select class="form-select" aria-label="Default select example" id="polution_2">
+                    <label for="road_2" class="form-label">નવા સી.સી રોડ બનાવવાની જરૂરીયાત છે કે, કેમ?</label>
+                    <select class="form-select" aria-label="Default select example" id="road_2">
               <option value="" disabled selected></option>
               <option value="yes">Yes</option>
               <option value="no">No</option>
               <!-- Add more options as needed -->
             </select>
                 </div>
-					<div class="col-md-12">
-                    <label for="polution_2v" class="form-label">વિગત</label>
-                    <input type="text" class="form-control" id="polution_2v" placeholder="">
-                </div>
 						<div class="col-md-12">
-                    <label for="polution_3" class="form-label">ગામમાં આવેલ જી.આઈ.ડી.સી/ કોઈ ફેક્ટરી દ્રારા છોડવામાં આવતા કેમિકલ યુક્ત પાણીનો નિકાલ યોગ્ય રીતે થાય છે કે, કેમ?</label>
-                    <select class="form-select" aria-label="Default select example" id="polution_3">
+                    <label for="road_2v" class="form-label">વિગત</label>
+                    <input type="text" class="form-control" id="road_2v" placeholder="">
+                </div>
+					<div class="col-md-12">
+                    <label for="road_3" class="form-label">પ્રાથમિક અને માધ્યમિક શાળાઓ ને જોડતા રસ્તા બનાવેલ છે કે નહિ?</label>
+                    <select class="form-select" aria-label="Default select example" id="road_3">
               <option value="" disabled selected></option>
               <option value="yes">Yes</option>
               <option value="no">No</option>
               <!-- Add more options as needed -->
             </select>
                 </div>
-					<div class="col-md-12">
-                    <label for="polution_3v" class="form-label">વિગત</label>
-                    <input type="text" class="form-control" id="polution_3v" placeholder="">
-                </div>
 						<div class="col-md-12">
-                    <label for="polution_4" class="form-label">ગામમાં આવેલ જી.આઈ.ડી.સી/કોઈ ફેક્ટરી IUDASTUICAL SAFETY AUDIT થાય છે કે, કેમ? </label>
-                    <select class="form-select" aria-label="Default select example" id="polution_4">
-              <option value="" disabled selected></option>
-              <option value="yes">Yes</option>
-              <option value="no">No</option>
-              <!-- Add more options as needed -->
-            </select>
+                    <label for="road_3v" class="form-label">વિગત</label>
+                    <input type="text" class="form-control" id="road_3v" placeholder="">
                 </div>
-					<div class="col-md-12">
-                    <label for="polution_4v" class="form-label">વિગત</label>
-                    <input type="text" class="form-control" id="polution_4v" placeholder="">
+	<div class="col-md-12">
+                    <label for="road_4" class="form-label">અન્ય બાબત</label>
+                    <input type="text" class="form-control" id="road_4" placeholder="">
                 </div>
-					<div class="col-md-12">
-                    <label for="polution_5" class="form-label">અન્ય બાબત</label>
-                    <input type="text" class="form-control" id="polution_5" placeholder="">
-                </div>
-
 				</div>
-				                <button type="button" class="btn btn-secondary" onclick="window.location='cleanliness-questions.php';">Previous</button>
+				                <button type="button" class="btn btn-secondary" onclick="window.location='electricity-questions.php';">Previous</button>
 				<button type="button" class="btn btn-success" onclick="saveForm()">Save</button>
-                <button type="button" class="btn btn-primary" onclick="window.location='revenue-questions.php';">Next</button>
+                <button type="button" class="btn btn-primary" onclick="window.location='sewer-questions.php';">Next</button>
 			</div>
 				</form>
 				
