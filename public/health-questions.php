@@ -526,5 +526,5 @@
     </script>
 
 </body>
-<?php include 'main-footer.php'; ?>
+<?php include __DIR__.'/../main-footer.php'; ?>
 </html>
