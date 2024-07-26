@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<?php include 'head.php';
-	$page = 'road-questions';?>
+<?php include __DIR__.'/../head.php';
+	$page = 'electricity-questions';?>
 <title>ગામની મુલાકાતનું પત્રક</title>
-	<?php include 'main-header.php'; ?>
+<?php include __DIR__.'/../main-header.php'; ?>
 <style>
     .step {
       display: none;
@@ -21,11 +21,11 @@
 
                                 <div class="card-body">
         <form id="surveyForm">
-     			<!-- Step 8 -->
+     		<!-- Step 7 -->
 			<div class="step active">
 				<div class="row">
-					<h5 class="card-title text-center fs-4">રોડ/રસ્તા બાબતના પ્રશ્નો</h5>
-								  <div class="col-md-6 mb-3">
+					<h5 class="card-title text-center fs-4">વીજપુરવઠો બાબતના પ્રશ્નો</h5>
+							  <div class="col-md-6 mb-3">
   	<label for="validationCustom03">તાલુકાનું નામ:</label>
       <select class="form-select" name="category" id="validationCustom03" onchange="ChangecatList()" required>
         <option value="">તાલુકો સિલેક્ટ કરો</option>
@@ -46,8 +46,8 @@
 	</div>
   </div>
 						<div class="col-md-12">
-                    <label for="road_1" class="form-label">ગામમા સી.સી રોડ છે કે, કેમ?</label>
-                    <select class="form-select" aria-label="Default select example" id="road_1">
+                    <label for="electric_1" class="form-label">GEB/UGVCL દ્વારા નિયમિત ૨૪ કલાક વીજ પુરવઠો ઉપલબ્ધ કરાવવામાં આવે છે કે કેમ,?</label>
+                    <select class="form-select" aria-label="Default select example" id="electric_1">
               <option value="" disabled selected></option>
               <option value="yes">Yes</option>
               <option value="no">No</option>
@@ -55,13 +55,12 @@
             </select>
                 </div>
 						<div class="col-md-12">
-                    <label for="road_1v" class="form-label">વિગત</label>
-                    <input type="text" class="form-control" id="road_1v" placeholder="">
+                    <label for="electric_1v" class="form-label">વિગત</label>
+                    <input type="text" class="form-control" id="electric_1v" placeholder="">
                 </div>
-					
 						<div class="col-md-12">
-                    <label for="road_2" class="form-label">નવા સી.સી રોડ બનાવવાની જરૂરીયાત છે કે, કેમ?</label>
-                    <select class="form-select" aria-label="Default select example" id="road_2">
+                    <label for="electric_2" class="form-label">GEB/UGVCL વીજ પુરવઠા બાબતે સમસ્યાઓ/પ્રશ્નોના નિરાકરણ માટે કોઇ વ્યવસ્થા છે કે, કેમ ?</label>
+                    <select class="form-select" aria-label="Default select example" id="electric_2">
               <option value="" disabled selected></option>
               <option value="yes">Yes</option>
               <option value="no">No</option>
@@ -69,12 +68,12 @@
             </select>
                 </div>
 						<div class="col-md-12">
-                    <label for="road_2v" class="form-label">વિગત</label>
-                    <input type="text" class="form-control" id="road_2v" placeholder="">
+                    <label for="electric_2v" class="form-label">વિગત</label>
+                    <input type="text" class="form-control" id="electric_2v" placeholder="">
                 </div>
-					<div class="col-md-12">
-                    <label for="road_3" class="form-label">પ્રાથમિક અને માધ્યમિક શાળાઓ ને જોડતા રસ્તા બનાવેલ છે કે નહિ?</label>
-                    <select class="form-select" aria-label="Default select example" id="road_3">
+						<div class="col-md-12">
+                    <label for="electric_3" class="form-label">નવુ લાઇટ કનેક્શન લેવા માટે ગ્રામજનોને માહિતી પુરી પાડવામાં આવે છે કે, કેમ?</label>
+                    <select class="form-select" aria-label="Default select example" id="electric_3">
               <option value="" disabled selected></option>
               <option value="yes">Yes</option>
               <option value="no">No</option>
@@ -82,17 +81,18 @@
             </select>
                 </div>
 						<div class="col-md-12">
-                    <label for="road_3v" class="form-label">વિગત</label>
-                    <input type="text" class="form-control" id="road_3v" placeholder="">
+                    <label for="electric_3v" class="form-label">વિગત</label>
+                    <input type="text" class="form-control" id="electric_3v" placeholder="">
                 </div>
-	<div class="col-md-12">
-                    <label for="road_4" class="form-label">અન્ય બાબત</label>
-                    <input type="text" class="form-control" id="road_4" placeholder="">
+						<div class="col-md-12">
+                    <label for="electric_4" class="form-label">અન્ય બાબત</label>
+                    <input type="text" class="form-control" id="electric_4" placeholder="">
                 </div>
+
 				</div>
-				                <button type="button" class="btn btn-secondary" onclick="window.location='electricity-questions.php';">Previous</button>
+				                <button type="button" class="btn btn-secondary" onclick="window.location='water-questions.php';">Previous</button>
 				<button type="button" class="btn btn-success" onclick="saveForm()">Save</button>
-                <button type="button" class="btn btn-primary" onclick="window.location='sewer-questions.php';">Next</button>
+                <button type="button" class="btn btn-primary" onclick="window.location='road-questions.php';">Next</button>
 			</div>
 				</form>
 				

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<?php include 'head.php'; 
-	$page = 'cleanliness-questions';?>
+<?php include __DIR__.'/../head.php';
+	$page = 'polution-questions';?>
 <title>ગામની મુલાકાતનું પત્રક</title>
-	<?php include 'main-header.php'; ?>
+<?php include __DIR__.'/../main-header.php'; ?>
 <style>
     .step {
       display: none;
@@ -22,11 +22,11 @@
                                 <div class="card-body">
         <form id="surveyForm">
      			
-								<!-- Step 10 -->
+							<!-- Step 11 -->
 			<div class="step active">
 				<div class="row">
-					<h5 class="card-title text-center fs-4">સ્વચ્છતા બાબતના પ્રશ્નો</h5>
-								  <div class="col-md-6 mb-3">
+					<h5 class="card-title text-center fs-4">પ્રદુષણ બાબતના પ્રશ્નો</h5>
+							  <div class="col-md-6 mb-3">
   	<label for="validationCustom03">તાલુકાનું નામ:</label>
       <select class="form-select" name="category" id="validationCustom03" onchange="ChangecatList()" required>
         <option value="">તાલુકો સિલેક્ટ કરો</option>
@@ -47,8 +47,8 @@
 	</div>
   </div>
 						<div class="col-md-12">
-                    <label for="cleanliness_1" class="form-label">ડોર ટુ ડોર કલેક્શનની સેવા ઉપલબ્ધ છે કે, કેમ?</label>
-                    <select class="form-select" aria-label="Default select example" id="cleanliness_1">
+                    <label for="polution_1" class="form-label">ગામમાં આવેલી GIDC/ફેક્ટરીની આજુબાજુમાં સ્વચ્છતા જળવાય છે કે, કેમ?</label>
+                    <select class="form-select" aria-label="Default select example" id="polution_1">
               <option value="" disabled selected></option>
               <option value="yes">Yes</option>
               <option value="no">No</option>
@@ -56,12 +56,12 @@
             </select>
                 </div>
 						<div class="col-md-12">
-                    <label for="cleanliness_1v" class="form-label">વિગત</label>
-                    <input type="text" class="form-control" id="cleanliness_1v" placeholder="">
+                    <label for="polution_1v" class="form-label">વિગત</label>
+                    <input type="text" class="form-control" id="polution_1v" placeholder="">
                 </div>
 						<div class="col-md-12">
-                    <label for="cleanliness_2" class="form-label">ગામની ડમ્પીંગ સાઇટથી મુખ્ય ડમ્પીંગ સાઇટ પર વેસ્ટ કચરાનો નિકાલ કેટલા દિવસે થાય છે?</label>
-                    <select class="form-select" aria-label="Default select example" id="cleanliness_2">
+                    <label for="polution_2" class="form-label">ગામમા પ્રદુષણ અંગે કોઇ પ્રશ્ન છે કે કેમ?</label>
+                    <select class="form-select" aria-label="Default select example" id="polution_2">
               <option value="" disabled selected></option>
               <option value="yes">Yes</option>
               <option value="no">No</option>
@@ -69,44 +69,44 @@
             </select>
                 </div>
 					<div class="col-md-12">
-                    <label for="cleanliness_2v" class="form-label">ડમ્પીંગ સાઈટ નું સ્થળ</label>
-                    <input type="text" class="form-control" id="cleanliness_2v" placeholder="">
+                    <label for="polution_2v" class="form-label">વિગત</label>
+                    <input type="text" class="form-control" id="polution_2v" placeholder="">
                 </div>
 						<div class="col-md-12">
-                    <label for="cleanliness_3" class="form-label">ગામની સફાઈ રોજ થાય છે કે કેમ?</label>
-                    <select class="form-select" aria-label="Default select example" id="cleanliness_3">
+                    <label for="polution_3" class="form-label">ગામમાં આવેલ જી.આઈ.ડી.સી/ કોઈ ફેક્ટરી દ્રારા છોડવામાં આવતા કેમિકલ યુક્ત પાણીનો નિકાલ યોગ્ય રીતે થાય છે કે, કેમ?</label>
+                    <select class="form-select" aria-label="Default select example" id="polution_3">
               <option value="" disabled selected></option>
               <option value="yes">Yes</option>
               <option value="no">No</option>
               <!-- Add more options as needed -->
             </select>
                 </div>
-						<div class="col-md-12">
-                    <label for="cleanliness_3v" class="form-label">વિગત</label>
-                    <input type="text" class="form-control" id="cleanliness_3v" placeholder="">
-                </div>
-							<div class="col-md-12">
-                    <label for="cleanliness_4" class="form-label">સ્વચ્છતા માટે કેટલા વ્યક્તિ કાર્યરત છે?</label>
-                    <input type="text" class="form-control" id="cleanliness_4" placeholder="">
-                </div>
-							<div class="col-md-12">
-                    <label for="cleanliness_5" class="form-label">સ્વચ્છતા માટે કેટલા વાહનો છે?</label>
-                    <input type="text" class="form-control" id="cleanliness_5" placeholder="">
-                </div>
-				
-	<div class="col-md-12">
-                    <label for="cleanliness_6" class="form-label">સ્વચ્છતા માટે કયા કયા વાહનો છે?</label>
-                    <input type="text" class="form-control" id="cleanliness_6" placeholder="">
+					<div class="col-md-12">
+                    <label for="polution_3v" class="form-label">વિગત</label>
+                    <input type="text" class="form-control" id="polution_3v" placeholder="">
                 </div>
 						<div class="col-md-12">
-                    <label for="cleanliness_7" class="form-label">અન્ય બાબત</label>
-                    <input type="text" class="form-control" id="cleanliness_7" placeholder="">
+                    <label for="polution_4" class="form-label">ગામમાં આવેલ જી.આઈ.ડી.સી/કોઈ ફેક્ટરી IUDASTUICAL SAFETY AUDIT થાય છે કે, કેમ? </label>
+                    <select class="form-select" aria-label="Default select example" id="polution_4">
+              <option value="" disabled selected></option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+              <!-- Add more options as needed -->
+            </select>
                 </div>
-				
+					<div class="col-md-12">
+                    <label for="polution_4v" class="form-label">વિગત</label>
+                    <input type="text" class="form-control" id="polution_4v" placeholder="">
+                </div>
+					<div class="col-md-12">
+                    <label for="polution_5" class="form-label">અન્ય બાબત</label>
+                    <input type="text" class="form-control" id="polution_5" placeholder="">
+                </div>
+
 				</div>
-				                <button type="button" class="btn btn-secondary" onclick="window.location='sewer-questions.php';">Previous</button>
+				                <button type="button" class="btn btn-secondary" onclick="window.location='cleanliness-questions.php';">Previous</button>
 				<button type="button" class="btn btn-success" onclick="saveForm()">Save</button>
-                <button type="button" class="btn btn-primary" onclick="window.location='polution-questions.php';">Next</button>
+                <button type="button" class="btn btn-primary" onclick="window.location='revenue-questions.php';">Next</button>
 			</div>
 				</form>
 				
