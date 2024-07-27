@@ -587,9 +587,9 @@
 
 
     //nice select
-    $(document).ready(function() {
-        $('select:not(.ignore)').niceSelect();
-    });
+    // $(document).ready(function() {
+    //     $('select:not(.ignore)').niceSelect();
+    // });
 
     //Jquery Spinner / Quantity Spinner
     if ($('.quantity-spinner').length) {

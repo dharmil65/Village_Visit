@@ -3,7 +3,7 @@
 
 <?php include __DIR__.'/../head.php'; ?>
 <title>Village Visit Login</title>
-	<?php include 'main-header.php'; ?>
+	<?php include __DIR__.'/../main-header.php'; ?>
 	<style>.menu-area {
     display: none;
 }</style>

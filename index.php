@@ -5,7 +5,7 @@
 	$page = 'index';
 	?>
 <title>ગામની મુલાકાતનું પત્રક</title>
-	<?php include 'main-header.php'; ?>
+	<?php include __DIR__.'/../main-header.php'; ?>
 <style>
     .step {
       display: none;
