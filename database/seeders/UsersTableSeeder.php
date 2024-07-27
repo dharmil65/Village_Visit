@@ -20,26 +20,26 @@ class UsersTableSeeder extends Seeder
 
         DB::table('users')->insert([
             'id' => 1,
-            'name' => 'Admin',
+            'name' => 'Demo_1',
             'email' => 'admin_village_visit@gmail.com',
-            'password' => 'Test@123',
+            'password' => '123456',
             'allotted_village' => null,
             'created_at' => now(),
             'updated_at' => now(),
             'deleted_at' => null,
         ]);
 
-        for ($i = 2; $i <= 60; $i++) {
-            DB::table('users')->insert([
-                'id' => $i,
-                'name' => $faker->name,
-                'email' => $faker->unique()->safeEmail,
-                'password' => 'Test@123',
-                'allotted_village' => $faker->city,
-                'created_at' => now(),
-                'updated_at' => now(),
-                'deleted_at' => null,
-            ]);
-        }
+        // for ($i = 2; $i <= 60; $i++) {
+        //     DB::table('users')->insert([
+        //         'id' => $i,
+        //         'name' => $faker->name,
+        //         'email' => $faker->unique()->safeEmail,
+        //         'password' => '123456',
+        //         'allotted_village' => $faker->city,
+        //         'created_at' => now(),
+        //         'updated_at' => now(),
+        //         'deleted_at' => null,
+        //     ]);
+        // }
     }
 }
